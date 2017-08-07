@@ -1,0 +1,273 @@
+input[type="text"] {
+    text-indent: 1rem;
+    height: 1.5rem;
+    width: 70%; /* i.e. 60% of the containers width is the input box*/
+    color: grey;
+    border-radius: 10px;
+}
+
+input[type="button"] {
+    background-color: #2ACD72;
+    border: none;
+    color: white;
+    padding: .18rem 5%; /* NB: 0.25 rem because our height for the input text field is 1.5rem so 1 + 0.25 * 2 */
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 0 10px 10px 0;
+}
+
+.colored-nav {
+    background-color: #2ACD72;
+    width: 100%;
+    height: 1vh;
+}
+
+.banner {
+    position: relative;
+    padding: 1rem 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: 39rem;
+}
+
+.splash-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -100;
+}
+
+.title-name {
+    font-family: 'Lobster', cursive;
+    font-size: 2.75rem;
+    color: black;
+}
+
+.notify-dot {
+    color: #2ACD72;
+}
+
+.row.section-one { /* i.e the banner description and icon, excluding the title*/
+    font-size: 1.1rem;
+    padding-top: 1rem;
+    justify-content: center;
+}
+
+.section-one .col-small-3 {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+
+.title-desc {
+    color: rgba(8, 19, 84, 1);
+    font-weight: 500;
+    font-family: Georgia;
+}
+
+.os-favicons {
+    display: flex;
+    margin-top: 1vh;
+}
+
+.os-icon {
+    margin: 0 0.35em;
+    background-color: rgba(51, 47, 51, 0.42);
+    color: white;
+    width: 2em;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding-bottom: 0.1em;
+    /* to center it better! */
+}
+
+.os-icon:hover {
+    background-color: #2ACD72;
+}
+
+.row.feature-container {
+    flex-direction: column;
+    justify-content: center;
+    background-color: whitesmoke;
+}
+
+.row.feature {
+    padding: 1vh;
+}
+
+.icon-wrap {
+    background-color: #2ACD72;
+    color: white;
+    width: 5rem !important; /* normally will get overriden due to width of col-small-whatever */
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.icon-title-desc {
+    font-family: Garamond;
+    font-weight: 600;
+    font-size: 1.25rem;
+    padding-top: 0.5vh;
+    padding-left: 2vw;
+}
+
+.icon-desc {
+    font-weight: 400;
+    font-size: 1rem;
+    margin-top: 0.5vh;
+}
+
+.row.main-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #E4E4E4;
+    padding-bottom: 1rem;
+}
+
+.main-left {
+    padding: 0 5vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-input {
+
+}
+
+.notify-button {
+    margin-left: -5%;
+}
+
+.main-right {
+    order: -100;
+
+}
+
+.video-div {
+    display: flex; /* making container flex so we can center iframe */
+    justify-content: center;
+    align-items: center;
+    margin: 2vh 0;
+
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+
+}
+
+.video-splash {
+    position: absolute;
+    top: 0;
+    width: 90%;
+    height: 90%;
+}
+
+.main-title {
+    font-family: 'Lobster', cursive;
+    font-weight: bold;
+    font-size: 2rem;
+    padding-bottom: 0.5rem;
+}
+
+.main-desc {
+    font-size: 1.25rem;
+    padding: 0.5rem 0;
+}
+
+.row.subfooter-content{
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0;
+    background-color: whitesmoke;
+    max-width: 100%;
+}
+
+.subfooter-desc{
+    font-style: italic;
+    padding-bottom: 0.9rem;
+    max-width: 90%;
+}
+
+.subfooter-name{
+    font-weight: 900;
+    padding-bottom: 0.75em;
+    font-size: 1.1rem;
+}
+
+.subfooter-photos{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.person-icon{
+    width: 3rem;
+    height: 3rem;
+    background: none;
+}
+
+.person-icon:hover{
+    background: rgba(29, 199, 8, 0.3);
+}
+
+.subfooter-title{
+    padding: 0.5em 0;
+    font-size: 1.40rem;
+    font-weight: 800;
+}
+
+.subfooter-desc2{
+    padding: 0.5rem 0 0.75rem 0;
+}
+
+.subfooter-soc-media{
+    display: flex;
+    align-items: center;
+}
+
+.socmed-icon-wrap{
+    margin: 0 0.1em;
+    background-color: rgba(51, 47, 51, 0.42);
+    color: white;
+    width: 2em;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding-bottom: 0.1em;
+}
+
+.row.end-footer{
+    max-width: 100%;
+    height: 5rem;
+    background-color: #E4E4E4;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-us{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.contact-us li{
+    display: block;
+    margin: 0 1rem;
+    color: darkgrey;
+}
